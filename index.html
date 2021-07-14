@@ -27,6 +27,7 @@
             <div class="buttons">
                 <a href="#" class="btn btn__login">Log in</a>
                 <a href="#" class="btn btn__trial">Start free trial</a>
+                <a href="#" class="btn btn__signup">Sign up</a>
             </div>
         </div>
     </div>
@@ -37,19 +38,19 @@
         <div class="container">
             <h1 class="hiring__h1">Where hiring comes together.</h1>
             <h2 class="hiring__h2">Everything you need to organise your hiring and make a great impression.</h2>
-            <div class="email-center">
+            <form action="" class="email-center">
                 <input type="text" class="hiring__input" placeholder="Work email" required/>
-                <button class="btn btn__hiring">Start free trial</button>
-            </div>
+                <input type="submit" value="Start free trial" class="btn btn__hiring">
+            </form>
             <p class="p__hiring">Join thousands of teams hiring with Homerun</p>
             <div class="flex">
                 <img src="/images/TBWAINEBOKO.png" alt="TBWAINEBOKO">
                 <img src="/images/tonyschoco.png" alt="tonyschoco">
                 <img src="/images/Buffer.png" alt="Buffer">
-                <img src="/images/VolksHOTEL.png" alt="VolksHOTEL">
-                <img src="/images/geckoboard.png" alt="geckoboard">
-                <img src="/images/PUBLICISGROUPE.png" alt="PUBLICISGROUPE">
-                <img src="/images/TNW.png" alt="TNW">
+                <img src="/images/VolksHOTEL.png" alt="VolksHOTEL" class="hire__image">
+                <img src="/images/geckoboard.png" alt="geckoboard" class="hire__image">
+                <img src="/images/PUBLICISGROUPE.png" alt="PUBLICISGROUPE" class="hire__image">
+                <img src="/images/TNW.png" alt="TNW" class="TNW">
             </div>
         </div>
     </section>
@@ -173,22 +174,84 @@
             <h1>Start your free<br />Homerun trial today</h1>
             <input type="button" class="btn" value="Start free trial">
             <div class="flex">
-                <p class="trial__p">&#9996;Totally free for 15 days</p>
-                <p>&#9996;No credit card needed</p>
+                <p class="trial__p">Totally free for 15 days</p>
+                <p>No credit card needed</p>
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
 
     <footer class="footer">
         <div class="container">
             <div class="flex">
                 <img src="/images/homerun__footer.png" alt="homerun" />
-                
+                <a href="#" class="btn btn__trial">Start free trial</a>
+            </div>
+            <div class="footer__wrapper">
+                <div class="footer_column">
+                    <h2 class="bold__footer__h2">Product</h2>
+                    <ul>
+                        <li><a href="#" class="hire">Hire</a></li>
+                        <li><a href="#" class="create">Create</a></li>
+                        <li><a href="#" class="footer__links">Templates</a></li>
+                        <li><a href="#" class="footer__links">All features</a></li>
+                        <li class="footer__link__pricing"><a href="#" class="footer__links">Pricing</a></li>
+                        <li><a href="#" class="footer__links">New in Homerun</a>&nbsp;&#129305;</li>
+                    </ul>
+                </div>
+                <div class="footer_column">
+                    <h2 class="bold__footer__h2">Learn</h2>
+                    <ul>
+                        <li><a href="#" class="footer__links">Blog</a></li>
+                        <li><a href="#" class="footer__links">Help Center</a></li>
+                    </ul>
+                    <h2 class="bold__footer__h2 bold__footer__h2__margin">Guides</h2>
+                    <ul>
+                        <li><a href="#" class="footer__links">Remote Hiring</a></li>
+                        <li><a href="#" class="footer__links">Employer Branding</a></li>
+                        <li><a href="#" class="footer__links">Job Interviewing</a></li>
+                        <li><a href="#" class="footer__links">Diversity & Inclusion</a></li>
+                        <li><a href="#" class="footer__links">Attracting talent</a></li>
+                        <li><a href="#" class="footer__links">GDPR Hiring</a></li>
+                    </ul>
+                </div>
+                <div class="footer_column">
+                    <h2 class="bold__footer__h2">About Homerun</h2>
+                    <ul>
+                        <li><a href="#" class="footer__links">About us</a></li>
+                        <li><a href="#" class="footer__links">We're hiring <span>2</span></a></li>
+                        <li><a href="#" class="footer__links">Contact us</a></li>
+                    </ul>
+                    <h2 class="bold__footer__h2">Legal</h2>
+                    <ul>
+                        <li><a href="#" class="footer__links">Terms</a></li>
+                        <li><a href="#" class="footer__links">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="footer_column">
+                    <h2 class="bold__footer__h2">Art of Work newsletter</h2>
+                    <p class="grey__footer">Receive must-read articles and trends on company culture, hiring and work/life balance.</p>
+                    <h2 class="bold__footer__h2">Sign up to our newsletter</h2>
+                    <form action="" class="form__flex">
+                        <input type="text" name="" placeholder="Email" class="input__footer" required/>
+                        <input type="submit" value="Sign up" class="submit__footer">
+                    </form>
+                    <div class="icons__flex">
+                        <a href="#">
+                            <img src="/images/Frame.svg" alt="ig" />
+                        </a>
+                        <a href="#">
+                            <img src="/images/Frame-1.svg" alt="in" />
+                        </a>
+                        <a href="#">
+                            <img src="/images/Frame-2.svg" alt="twitter" />
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="/script.js"></script>
 </body>
 </html>
