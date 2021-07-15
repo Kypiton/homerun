@@ -33,7 +33,7 @@ body {
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* gap: 20px; */
+  gap: 20px;
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -67,7 +67,7 @@ body {
 }
 
 .navbar .container {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .navbar ul {
@@ -197,6 +197,12 @@ video {
 
 .main__hire {
   margin: 0 100px;
+}
+
+.main__hire .hire__text,
+.main__hire .hire__video {
+  overflow: hidden;
+  padding: 0;
 }
 
 .hire {
@@ -398,6 +404,7 @@ video {
   background-color: #181818;
   border-radius: 20px;
   margin-top: 40px;
+  overflow: hidden;
 }
 
 .kickstar__new {
@@ -667,21 +674,63 @@ video {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
+  .main__hire,
+  .main__create {
+    margin: 0;
+    padding: 0;
+  }
+  .hire__text h1,
+  .hire__text p,
+  .create__text h1,
+  .create__text p {
+    max-width: 100%;
+  }
+  .main__hire video,
+  .main__create video {
+    width: 100%;
+    height: 100%;
+  }
+  .main__create .grid {
+    gap: 0;
+  }
+  .create__text {
+    order: 1;
+  }
+  .create__video {
+    order: 2;
+  }
+  .club .container,
+  .kickstar .container,
+  .trial .container,
+  .footer .container {
+    max-width: 90%;
+    overflow: hidden;
+  }
+  .girl {
+    display: none;
+  }
+  .doppa_section {
+    border-radius: 20px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
-    .TNW {
-        display: none;
-    }
-    .hiring .flex {
-        flex-wrap: nowrap;
-    }
+  .TNW {
+    display: none;
+  }
+  .hiring .flex {
+    flex-wrap: nowrap;
+  }
 }
 
 @media screen and (max-width: 1039px) {
-    .hiring .flex {
-        flex-wrap: wrap;
-    }
+  .hiring .flex {
+    flex-wrap: wrap;
+  }
+  .video video {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media screen and (max-width: 1014px) {
@@ -700,12 +749,193 @@ video {
 }
 
 @media screen and (max-width: 900px) {
-    .hiring__h1 {
-        font-size: 80px;
-    }
-    .hiring__h2 {
-        font-size: 20px;
-    }
+  .hiring__h1 {
+    font-size: 80px;
+  }
+  .hiring__h2 {
+    font-size: 20px;
+  }
+  .main__hire .container .main__create .container {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .club__text__1 {
+    font-size: 20px;
+  }
+  .club__text__2,
+  .club__text__3 {
+    font-size: 15px;
+  }
+  .club__button__1,
+  .club__button__2 {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .average {
+    margin: 0ch;
+    overflow: hidden;
+  }
+  .capterra img {
+    margin-top: 10px;
+  }
+  .intercom img {
+    margin-top: 25px;
+  }
 }
 
 /* Mobile */
+
+@media (max-width: 500px) {
+  .hiring .flex {
+    display: block;
+    text-align: center;
+  }
+  .btn__video {
+    padding: 7px;
+  }
+  .btn__video p {
+    font-size: 14px;
+  }
+  .video button {
+    margin-top: 1px;
+  }
+  .hire__text h1,
+  .create__text h1 {
+    font-size: 36px;
+  }
+  .p__hire,
+  .p__create {
+    font-size: 15px;
+  }
+  .main__hire .grid {
+    gap: 0;
+  }
+  .hire__text input,
+  .create__text input {
+    font-size: 12px;
+    font-weight: normal;
+    padding: 10px;
+  }
+  .club__text__1 {
+    font-size: 18px;
+  }
+  .club__text__2,
+  .club__text__3 {
+    display: none;
+  }
+  .club__button__2 {
+    margin: 25px auto;
+  }
+}
+
+@media screen and (max-width: 437px) {
+    .footer_column:nth-child(3) {
+        order: -1;
+    }
+    .footer_column:nth-child(1) {
+        order: -1;
+    }
+}
+
+@media screen and (max-width: 400px) {
+  .kickstar h1 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 385px) {
+    .footer_column:nth-child(4) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 370px) {
+  .average .container {
+    overflow: hidden;
+  }
+  .trial h1 {
+      font-size: 36px;
+      line-height: 40px;
+  }
+  .hiring__h1 {
+      font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .hire__text h1,
+  .create__text h1 {
+    font-size: 28px;
+  }
+  .kickstar input {
+    font-size: 15px;
+    padding: 10px;
+  }
+  .trial video {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 339px) {
+    .footer .flex a {
+        margin-top: 30px;
+    }
+    .navbar .flex {
+        flex-wrap: nowrap;
+    }
+    .navbar .container {
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 290px) {
+    .trial p {
+        font-size: 5vw;
+    }
+}
+
+@media screen and (max-width: 280px) {
+  .navbar .flex {
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+  .hiring__h1 {
+    font-size: 50px;
+  }
+  .club h1 {
+    font-size: 30px;
+  }
+  .club__text__p .kickstar p {
+    font-size: 14px;
+  }
+  .club__button__1 {
+    padding: 10px;
+    font-size: 10px;
+    margin: 15px auto;
+  }
+  .kickstar input {
+    text-align: center;
+  }
+  .stars {
+    width: 175px;
+  }
+  .average h1 {
+    font-size: 50px;
+  }
+  .intercom img {
+    margin: 0 auto;
+  }
+  .trial video {
+    width: 100px;
+    height: 100px;
+  }
+  .trial h1 {
+      font-size: 28px;
+      line-height: 30px;
+  }
+}
